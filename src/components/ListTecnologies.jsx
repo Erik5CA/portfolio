@@ -5,11 +5,13 @@ export function ListTecnologies() {
   return (
   <div className="list-tecnologies">
     <h2>Technoligies</h2>
+    <div className='container-list-technologies'>
     {
-        techs.map((tech, index) => {
-          return <ItemTechnology key={index} tech={tech} />
+        techs.map((tech) => {
+          return <ItemTechnology key={tech.id} tech={tech} />
         })
     }
+    </div>
 
   </div>
   )
