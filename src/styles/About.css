@@ -1,0 +1,88 @@
+.container-about {
+  /* margin: 1.5rem; */
+  padding: 1rem 0.7rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(158, 158, 158, 0.15);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0.5rem 1rem rgba(248, 246, 246, 0.466);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contact {
+  display: flex;
+  height: 2rem;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-between;
+  /* padding: 0.5rem 0; */
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  & input {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+  }
+  & svg {
+    width: 20%;
+    background-color: rgb(62, 63, 63);
+    border-radius: 0.3rem;
+    border-left: 1px solid white;
+    padding: 0.1rem;
+    cursor: pointer;
+  }
+}
+
+.container-links {
+  & .github {
+    background-color: #171818;
+  }
+  & .code {
+    background-color: #0ac25d;
+    color: #171818;
+  }
+  & .demo {
+    background-color: #0ac25d;
+    color: #171818;
+  }
+  & a {
+    background-color: #0a66c2;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    width: fit-content;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+  }
+}
+
+.container-project-links,
+.container-contact-links {
+  display: flex;
+  gap: 1rem;
+}
