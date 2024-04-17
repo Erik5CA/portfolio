@@ -6,7 +6,7 @@ import avatar from '../public/avatar-de-hombre.png'
 export function About() {
   return (
     <div className="container-about">
-      <div>
+      <div className="container-about-image">
         <img src={avatar} alt="" className="about-image" />
       </div>
       <div className="about-content">
