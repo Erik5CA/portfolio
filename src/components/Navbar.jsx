@@ -1,6 +1,16 @@
 import "../styles/Navbar.css";
+import list from '../assets/list.svg'
+import close from "../assets/close.svg";
+import { useState } from "react";
 
 export function Navbar() {
+
+  const [show, setShow] = useState(false)
+
+  const handleChange = () => {
+    setShow(!show)
+  }
+
   return (
     <nav className="container-navbar">
       <div className="navbar-logo">Erik Castillo</div>
@@ -20,24 +30,29 @@ export function Navbar() {
           </li>
         </ul>
       </div>
-      <div>
-        <svg
-          width={"30px"}
-          height={"30px"}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#fff"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="burguer-svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </div>
+      <button className="burger-button" onClick={handleChange}>
+        <img src={list} alt="" />
+      </button>
+      {/* <div className={`menu-mobile ${show ? 'show' : ''}`}
+      onClick={handleChange}>
+        <ul className="container-navbar-links-mobile">
+          <button className="button-close" onClick={handleChange}>
+            <img src={close} alt="" />
+          </button>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+        </ul>
+      </div> */}
     </nav>
   );
 }
