@@ -10,6 +10,11 @@
   align-items: center;
 }
 
+.container-about-image {
+  display: flex;
+  justify-content: center;
+}
+
 .about-image {
   width: 150px;
   height: 150px;
@@ -56,6 +61,7 @@
 }
 
 .container-links {
+  transition: all 0.2s ease;
   & .github {
     background-color: #171818;
   }
@@ -85,4 +91,18 @@
 .container-contact-links {
   display: flex;
   gap: 1rem;
+}
+
+.container-links:hover {
+  scale: 1.1;
+}
+
+@media screen and (width > 750px) {
+  .container-about {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* flex-direction: row; */
+    gap: 2rem;
+    padding: 5rem;
+  }
 }
