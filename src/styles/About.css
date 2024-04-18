@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .container-about-image {
@@ -18,12 +19,12 @@
 .about-image {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-bottom: 1rem;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0.5rem 1rem rgba(248, 246, 246, 0.466);
+  /* background-color: rgb(255, 255, 255); */
+  /* box-shadow: 0 0.5rem 1rem rgba(248, 246, 246, 0.466); */
   transition: all 0.3s ease-in-out;
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
 }
 
 .about-content {
@@ -32,7 +33,7 @@
   flex-direction: column;
 }
 
-.container-contact {
+.container-contact-copy {
   display: flex;
   height: 2rem;
   margin: 1rem 0;
@@ -43,21 +44,27 @@
   border: 1px solid white;
   border-radius: 0.3rem;
   & input {
+    width: 80%;
     height: 100%;
     background-color: transparent;
     border: none;
     color: white;
     padding: 0 1rem;
     border-radius: 0.5rem;
+    font-size: 0.8rem;
   }
-  & svg {
-    width: 20%;
+  & img {
+    /* width: 20%; */
     background-color: rgb(62, 63, 63);
     border-radius: 0.3rem;
     border-left: 1px solid white;
-    padding: 0.1rem;
+    padding: 0.3rem;
     cursor: pointer;
   }
+}
+
+.container-contact input:focus {
+  outline: none;
 }
 
 .container-links {
@@ -73,6 +80,10 @@
     background-color: #0ac25d;
     color: #171818;
   }
+  & .cv {
+    background-color: #d11717;
+    color: #cccccc;
+  }
   & a {
     background-color: #0a66c2;
     text-decoration: none;
@@ -80,16 +91,23 @@
     transition: all 0.3s ease-in-out;
     display: flex;
     width: fit-content;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     padding: 0.5rem;
     border-radius: 0.3rem;
     font-weight: 600;
+    & img {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
 .container-project-links,
 .container-contact-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -103,6 +121,39 @@
     grid-template-columns: 2fr 3fr;
     /* flex-direction: row; */
     gap: 2rem;
-    padding: 5rem;
+    padding: 1.7rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .about-image {
+    width: 200px;
+    height: 200px;
+  }
+  .container-project-links,
+  .container-contact-links {
+    font-size: 1rem;
+  }
+  .container-contact-copy {
+    & input {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (width > 1000px) {
+  .container-about {
+    font-size: 1.4rem;
+    padding: 3rem;
+  }
+  .container-links {
+    & a {
+      & img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .container-project-links,
+  .container-contact-links {
+    font-size: 1.4rem;
   }
 }

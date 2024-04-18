@@ -44,6 +44,12 @@
 }
 
 @media screen and (width > 750px) {
+  .list-tecnologies {
+    padding: 3rem 3rem;
+    & h2 {
+      font-size: 1.8rem;
+    }
+  }
   .container-list-technologies {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
