@@ -4,7 +4,7 @@ import { techs } from '../mocks/listTech'
 export function ListTecnologies() {
   return (
   <div className="list-tecnologies">
-    <h2>Technoligies</h2>
+    <h2>Tecnologías</h2>
     <div className='container-list-technologies'>
     {
         techs.map((tech) => {
