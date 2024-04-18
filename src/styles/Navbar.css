@@ -48,7 +48,7 @@
   background-color: rgba(8, 48, 29, 0.589);
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -100%;
   display: flex;
@@ -120,7 +120,7 @@
   height: 1.5rem;
   transition: all ease 0.5s;
   align-self: self-end;
-  margin: 0 0.8rem;
+  margin: 0.8rem;
   & img {
     width: 100%;
     height: 100%;
@@ -133,6 +133,9 @@
 }
 
 @media screen and (width > 500px) {
+  .container-navbar {
+    padding: 1.2rem 6rem;
+  }
   .menu-mobile {
     display: none;
   }

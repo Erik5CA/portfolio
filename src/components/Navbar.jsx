@@ -10,7 +10,7 @@ export function Navbar() {
   const handleChange = () => {
     setShow(!show)
   }
-
+  
   return (
     <nav className="container-navbar">
       <div className="navbar-logo">Erik Castillo</div>
@@ -31,9 +31,9 @@ export function Navbar() {
         </ul>
       </div>
       <button className="burger-button" onClick={handleChange}>
-        <img src={list} alt="" />
+        <img src={show ? close : list} alt="" />
       </button>
-      {/* <div className={`menu-mobile ${show ? 'show' : ''}`}
+      <div className={`menu-mobile ${show ? 'show' : ''}`}
       onClick={handleChange}>
         <ul className="container-navbar-links-mobile">
           <button className="button-close" onClick={handleChange}>
@@ -52,7 +52,7 @@ export function Navbar() {
             <a href="#resume">Resume</a>
           </li>
         </ul>
-      </div> */}
+      </div>
     </nav>
   );
 }
