@@ -11,6 +11,21 @@
   /* overflow-x: hidden; */
 }
 
+*::-webkit-scrollbar {
+  width: 14px; /* width of the entire scrollbar */
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(41, 41, 41); /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(204, 204, 206); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(63, 63, 63); /* creates padding around scroll thumb */
+}
+
 body {
   background: rgb(70, 70, 70);
   background: linear-gradient(
