@@ -1,12 +1,12 @@
 
 
-export function ButtonLink({obj}) {
+export function ButtonLink({obj, url}) {
   
   return (
     <div className="container-links">
       <a
         className={`${obj.class}`}
-        href={obj.url}
+        href={obj.url ? obj.url : url }
         target="_blank"
         rel="noreferrer"
       >
