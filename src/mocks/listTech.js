@@ -5,6 +5,7 @@ import javascript from "../assets/tec/javascript.svg";
 import python from "../assets/tec/python.svg";
 import react from "../assets/tec/react.svg";
 import git from "../assets/tec/git.svg";
+import database from "../assets/tec/database.svg";
 
 export const techs = [
   {
@@ -54,6 +55,13 @@ export const techs = [
     name: "Git",
     class: "git",
     image: git,
+    url: "https://www.w3schools.com/python/",
+  },
+  {
+    id: 8,
+    name: "Database",
+    class: "database",
+    image: database,
     url: "https://www.w3schools.com/python/",
   },
 ];
