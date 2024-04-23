@@ -3,7 +3,7 @@ import github from "../assets/github.svg";
 import code from "../assets/code.svg";
 import demo from "../assets/demo.svg";
 import file from "../assets/file.svg";
-import cv from "../../public/ErikCastilloCV.pdf";
+import cv from "../public/ErikCastilloCV.pdf";
 
 export const objs = [
   {
