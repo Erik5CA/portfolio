@@ -1,7 +1,7 @@
 import "../styles/Navbar.css";
 import list from '../assets/list.svg'
 import close from "../assets/close.svg";
-import cv from '../../public/ErikCastilloCV.pdf'
+import cv from '../public/ErikCastilloCV.pdf'
 import { useState } from "react";
 
 export function Navbar() {
