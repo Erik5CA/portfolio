@@ -132,9 +132,17 @@
   border-radius: 0.1rem;
 }
 
-@media screen and (width > 500px) {
+/* @media screen and (width > 551px) and (width < 770px) {
   .container-navbar {
-    padding: 1.2rem 6rem;
+    padding: 1rem 0.5rem;
+  }
+} */
+
+@media screen and (width > 615px) {
+  .container-navbar {
+    padding: 1.2rem 1rem;
+    /* font-size: 10px; */
+    /* justify-content: flex-start; */
   }
   .menu-mobile {
     display: none;
