@@ -1,23 +1,25 @@
 import { useRef, useState } from "react";
-import clipboard from "../assets/clipboard.svg";
-import cCheck from "../assets/clipboard-check.svg";
+import { CopyCheckIcon, CopyIcon } from "./Icons";
 
 export function EmailCopy() {
-    const [fill, setFill] = useState(false)
-    const email = useRef();
-    const handleCopy = () => {
-      navigator.clipboard.writeText(email.current.value);
-      setFill(true);
-    };
+  const [fill, setFill] = useState(false);
+  const email = useRef();
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email.current.value);
+    setFill(true);
+    setTimeout(() => setFill(false), 1500);
+  };
   return (
-    <div className="container-contact-copy" onClick={handleCopy}>
+    <div className="container-contact-copy">
       <input
         type="text"
         ref={email}
         value={"erik.castillo.anzures@gmail.com"}
         readOnly
       />
-      <img src={ !fill ?  clipboard : cCheck} alt="" />
+      <div onClick={handleCopy} className="icon">
+        {!fill ? <CopyIcon /> : <CopyCheckIcon />}
+      </div>
     </div>
   );
 }
