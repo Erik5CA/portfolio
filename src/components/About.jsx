@@ -6,14 +6,13 @@ import avatar from "../public/sfd.png";
 import { EmailCopy } from "./EmailCopy";
 
 export function About() {
-
   return (
     <div className="container-about" id="about">
       <div className="container-about-image">
         <img src={avatar} alt="" className="about-image" />
       </div>
       <div className="about-content">
-        <h1>Erik Castillo</h1>
+        <h1 className="name">Erik Castillo</h1>
         <strong>Soy Frontend Developer</strong>
         <p>
           Me encanta enfocarme en los detalles con el propósito de proporcionar
@@ -21,7 +20,7 @@ export function About() {
           atractivo con una implementación de código excelente.
         </p>
 
-        <EmailCopy/>
+        <EmailCopy />
 
         <div className="container-contact-links">
           {/* <ButtonLink obj={objs[0]} />
