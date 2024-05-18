@@ -1,11 +1,9 @@
-
-export function ItemTechnology({tech}) {
-
+export function ItemTechnology({ tech }) {
   return (
     <div className="container-technology">
       {/* <div className={`${tech.class}`}> */}
-        <img src={tech.image} alt="" />
-        <p>{tech.name}</p>
+      <img className="technology-icon" src={tech.image} alt="" />
+      <p>{tech.name}</p>
       {/* </div> */}
     </div>
   );
