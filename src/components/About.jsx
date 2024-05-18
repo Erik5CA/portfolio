@@ -1,7 +1,6 @@
 import "../styles/About.css";
 import { ButtonLink } from "./ButtonLink";
 import { objs } from "../mocks/linkObj";
-// import avatar from '../public/avatar-de-hombre.png'
 import avatar from "../public/sfd.png";
 import { EmailCopy } from "./EmailCopy";
 
@@ -23,8 +22,6 @@ export function About() {
         <EmailCopy />
 
         <div className="container-contact-links">
-          {/* <ButtonLink obj={objs[0]} />
-          <ButtonLink obj={objs[1]} /> */}
           <ButtonLink obj={objs[2]} />
         </div>
       </div>
