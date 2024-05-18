@@ -4,6 +4,7 @@ import py1 from "../public/proyecto1.jpeg";
 import py2 from "../public/proyecto2.jpeg";
 import py3 from "../public/proyecto3.jpeg";
 import py4 from "../public/proyecto4.jpeg";
+import py5 from "../public/proyecto5.webp";
 const projects = [
   {
     id: 1,
@@ -17,6 +18,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "Weather App",
+    description:
+      "App enfocada para dispositivos moviles, adeacuada para mantenerse al tanto del clima en un periodo de 5 días.",
+    image: py5,
+    urlCode: "https://github.com/Erik5CA/react-app-weather",
+    urlDemo: "https://react-app-weather-delta.vercel.app/",
+    techs: ["Typescript", "Html", "CSS", "React", "API OpenWeather"],
+  },
+  {
+    id: 3,
     title: "Spotify Search",
     description:
       "App para buscar artistas, ver su discografía y sus canciones, utilizando la API de Spotify.",
@@ -26,7 +37,7 @@ const projects = [
     techs: ["Javascript", "Html", "CSS", "React", "API Spotify"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Where in the World?",
     description:
       "Web para buscar paises, ver informacion sobre ellos, ademas de poder elegir tema obscuro o claro. ",
@@ -37,7 +48,7 @@ const projects = [
     techs: ["Javascript", "Html", "CSS", "React"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Tip Calculator",
     description:
       "Web para calcular las propinas deacuerdo a un monto, total de personas y el porcentaje.",
