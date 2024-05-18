@@ -5,7 +5,7 @@ export function ProjectItem({ project }) {
   return (
     <div className="grid-projects-item">
       <div className="grid-projects-item-image">
-        <img src={project.image} alt="" />
+        <img src={project.image} alt={project.title} />
       </div>
       <div className="grid-projects-item-content">
         <h3 className="title-project">{project.title}</h3>
