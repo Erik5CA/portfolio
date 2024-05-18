@@ -10,22 +10,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 
 *::-webkit-scrollbar {
-  width: 14px; /* width of the entire scrollbar */
+  width: 14px;
   scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar-track {
-  background: rgb(41, 41, 41); /* color of the tracking area */
+  background: rgb(41, 41, 41);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(204, 204, 206); /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid rgb(63, 63, 63); /* creates padding around scroll thumb */
+  background-color: rgb(204, 204, 206);
+  border-radius: 20px;
+  border: 3px solid rgb(63, 63, 63);
 }
 
 body {
@@ -41,11 +40,7 @@ body {
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  /* width: 100vw;
-  max-width: 100vh; */
-  overflow-x: hidden;
   scroll-behavior: smooth !important;
-  /* position: relative; */
 }
 
 input {
