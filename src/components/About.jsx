@@ -9,7 +9,7 @@ export function About() {
   return (
     <div className="container-about" id="about">
       <div className="container-about-image">
-        <img src={avatar} alt="" className="about-image" />
+        <img src={avatar} alt="image about profile" className="about-image" />
       </div>
       <div className="about-content">
         <h1 className="name">Erik Castillo</h1>
