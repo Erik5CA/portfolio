@@ -1,6 +1,6 @@
 // List a array the projects, with title, description, image, url and list of tecnologies
 // import p1 from "../public/p1.jpg";
-import py1 from "../public/proyecto1.jpeg";
+import py1 from "../public/proyecto1.png";
 import py2 from "../public/proyecto2.jpeg";
 import py3 from "../public/proyecto3.jpeg";
 import py4 from "../public/proyecto4.jpeg";
@@ -12,9 +12,16 @@ const projects = [
     description:
       "App para crear grupos de estudio sobre cualquier tema, con la posibilidad de unirte para crear comentrios y ver activiades reciente, cuenta con autenticación de usuarios.",
     image: py1,
-    urlCode: "https://github.com/Erik5CA/django-study-app",
-    urlDemo: "https://django-study-app.onrender.com",
-    techs: ["Javascript", "Html", "CSS", "Django", "PostgreSQL"],
+    urlCode: "https://github.com/Erik5CA/next-study-app",
+    urlDemo: "https://study-app-henna.vercel.app/",
+    techs: [
+      "Typescript",
+      "Html",
+      "Tailwind CSS",
+      "NEXT.JS",
+      "PostgreSQL",
+      "Prisma ORM",
+    ],
   },
   {
     id: 2,

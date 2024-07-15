@@ -1,12 +1,13 @@
 import html from "../assets/tec/html5.svg";
 import css from "../assets/tec/css3.svg";
-import django from "../assets/tec/django.svg";
+import next from "../assets/tec/next.svg";
 import javascript from "../assets/tec/javascript.svg";
 import python from "../assets/tec/python.svg";
 import react from "../assets/tec/react.svg";
 import git from "../assets/tec/git.svg";
 import database from "../assets/tec/database.svg";
 import typescript from "../assets/tec/typescript.svg";
+import tailwind from "../assets/tec/tailwind.svg";
 
 export const techs = [
   {
@@ -14,62 +15,59 @@ export const techs = [
     name: "HTML5",
     class: "html",
     image: html,
-    url: "https://www.w3schools.com/html/",
   },
   {
     id: 2,
     name: "CSS3",
     class: "css",
     image: css,
-    url: "https://www.w3schools.com/css/",
   },
   {
     id: 3,
-    name: "Django",
-    class: "django",
-    image: django,
-    url: "https://www.djangoproject.com/",
-  },
-  {
-    id: 4,
     name: "Javascript",
     class: "javascript",
     image: javascript,
-    url: "https://www.w3schools.com/js/",
   },
   {
-    id: 5,
-    name: "Python",
-    class: "python",
-    image: python,
-    url: "https://www.w3schools.com/python/",
-  },
-  {
-    id: 6,
+    id: 4,
     name: "React",
     class: "react",
     image: react,
-    url: "https://www.w3schools.com/python/",
   },
   {
-    id: 7,
-    name: "Git",
-    class: "git",
-    image: git,
-    url: "https://www.w3schools.com/python/",
+    id: 5,
+    name: "NEXT",
+    class: "next",
+    image: next,
   },
   {
-    id: 8,
-    name: "Database",
-    class: "database",
-    image: database,
-    url: "https://www.w3schools.com/python/",
-  },
-  {
-    id: 9,
+    id: 6,
     name: "Typescript",
     class: "typescript",
     image: typescript,
-    url: "https://www.w3schools.com/python/",
+  },
+  {
+    id: 7,
+    name: "Tailwind",
+    class: "tailwind",
+    image: tailwind,
+  },
+  {
+    id: 8,
+    name: "Git",
+    class: "git",
+    image: git,
+  },
+  {
+    id: 9,
+    name: "Database",
+    class: "database",
+    image: database,
+  },
+  {
+    id: 10,
+    name: "Python",
+    class: "python",
+    image: python,
   },
 ];
