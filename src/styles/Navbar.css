@@ -21,6 +21,7 @@
     margin: 0 1rem;
 
     & a {
+      padding: 0 15px;
       text-decoration: none;
       color: white;
       font-size: 1.2rem;
@@ -51,7 +52,7 @@
 
 .show {
   right: 0;
-  transition: all 0.6s ease-in-out;
+  /* transition: all 0.6s ease-in-out; */
 }
 
 .container-navbar-links-mobile {
@@ -62,14 +63,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   & li {
     margin: 0.5rem;
-    padding: 0.3rem;
+    padding: 3px 1rem;
     border-radius: 0.5rem;
-    border-bottom: 1px solid #03522b;
     background-color: #0b8d4c;
-    width: 150px;
     & a {
       color: rgb(204, 202, 202);
       text-decoration: none;
@@ -127,9 +125,9 @@
   border-radius: 0.1rem;
 }
 
-@media screen and (width > 615px) {
+@media screen and (width > 656px) {
   .container-navbar {
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 3rem;
   }
   .menu-mobile {
     display: none;
