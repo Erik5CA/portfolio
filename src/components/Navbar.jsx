@@ -1,17 +1,16 @@
 import "../styles/Navbar.css";
-import list from '../assets/list.svg'
+import list from "../assets/list.svg";
 import close from "../assets/close.svg";
-import cv from '../public/ErikCastilloCV.pdf'
+import cv from "../public/ErikCastilloCV.pdf";
 import { useState } from "react";
 
 export function Navbar() {
-
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
 
   const handleChange = () => {
-    setShow(!show)
-  }
-  
+    setShow(!show);
+  };
+
   return (
     <nav className="container-navbar">
       <div className="navbar-logo">Erik Castillo</div>
@@ -37,7 +36,7 @@ export function Navbar() {
         <img src={show ? close : list} alt="" />
       </button>
       <div
-        className={`menu-mobile ${show ? "show" : ""}`}
+        className={show ? "menu-mobile show" : "menu-mobile"}
         onClick={handleChange}
       >
         <ul className="container-navbar-links-mobile">
